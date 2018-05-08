@@ -14,7 +14,7 @@ sudo apt-get -y upgrade
 # install apache 2.5 and php 5.5
 sudo apt-get install -y apache2
 sudo apt-get install -y php7
-sudo apt-get install -y python-pip
+sudo apt-get install -y python-pip python-setuptools libapache2-mod-wsgi python-django
 
 # install mysql and give password to installer
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
